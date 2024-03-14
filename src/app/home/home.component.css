@@ -1,0 +1,36 @@
+.home-page {
+    background-color: rgb(28, 46, 105);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Protest Riot', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 250px;
+    color: aliceblue;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    font-size: 50px;
+    
+}
+
+li {
+    background-color: rgb(107, 136, 233);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+li:hover {
+    background-color: rgb(152, 76, 172);
+}
+
+li a {
+    color:rgb(26, 4, 104);
+    text-decoration: none;
+}

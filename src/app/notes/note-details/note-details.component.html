@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12">
+    <menu type="toolbar">
+      <ul class="angular-menu">
+        <li
+          class="align-middle"
+          *ngFor="let item of menuOptions"
+          (click)="onSelectTopic(item)"
+        >
+          <a>{{ item.topic }}</a>
+        </li>
+      </ul>
+    </menu>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 angular-details">
+    <section [ngStyle]="{ height: !displayType ? '420px' : 'max-content' }">
+      <div *ngIf="!displayType">
+        <h3>Select a topic to view the notes.</h3>
+      </div>
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+</div>

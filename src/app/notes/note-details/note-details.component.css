@@ -1,0 +1,29 @@
+.angular-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.angular-menu li {
+  list-style-type: none;
+  width: 120px;
+  height: 70px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(4, 94, 49);
+  font-weight: bold;
+  text-align: center;
+  border: 2px groove beige;
+}
+
+.angular-details {
+  text-align: center;
+}
+
+.angular-details section {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(17, 87, 17);
+  border-radius: 10px;
+}

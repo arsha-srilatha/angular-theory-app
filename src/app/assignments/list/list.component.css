@@ -1,0 +1,22 @@
+ul {
+    display: grid;
+    grid-column-start: 1;
+    grid-template-columns: auto auto auto auto;
+}
+
+li {
+    line-height: 1.5;
+    font-weight: bold;
+    width: 150px;
+    height: 80px;
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(34, 156, 81);
+    border: 2px solid beige;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: rgb(181, 223, 197);;
+}

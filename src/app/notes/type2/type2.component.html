@@ -1,0 +1,37 @@
+<article>
+  <h2>{{ details.title }}</h2>
+  <hr />
+  <h4>{{ details.definition }}</h4>
+  <div class="row content">
+    <div class="col-md-6 button-list">
+      <div *ngFor="let item of details.subTypes">
+        <button
+          class="btn-subtype"
+          (click)="selectSubType(item.title)"
+          [ngClass]="{ 'btn-subtype-active': item.title == selectedSubType }"
+        >
+          {{ item.title }}
+        </button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p
+        *ngIf="selectedSubType == 'none'"
+        style="margin: 10px; font-weight: bold"
+      >
+        Click the sub-topic buttons to view each in detail.
+      </p>
+      <div *ngFor="let item of details.subTypes">
+        <div *ngIf="item.title == selectedSubType">
+          <p><strong>Syntax</strong>:</p>
+          <pre>{{ item.syntax }}</pre>
+          <b>Example: </b><i appExampleHighlight>{{ item.example }}</i>
+          <h5>Description</h5>
+          <ul *ngFor="let point of item.description">
+            <li>{{ point }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

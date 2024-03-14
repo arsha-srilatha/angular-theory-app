@@ -1,0 +1,48 @@
+<article>
+  <h2>{{ details.title }}</h2>
+  <hr />
+  <div class="row content">
+    <div class="col-md-6">
+      <h5>Description</h5>
+      <ul *ngFor="let point of details.description">
+        <li>{{ point }}</li>
+      </ul>
+    </div>
+    <div class="col-md-6 button-list">
+      <div *ngFor="let item of details.subTopics">
+        <button
+          class="btn-subtype"
+          (click)="selectSubType(item.topic)"
+          [ngClass]="{ 'btn-subtype-active': item.topic == selectedSubTopic }"
+        >
+          {{ item.topic }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row" *ngFor="let item of details.subTopics">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <section *ngIf="item.topic == selectedSubTopic">
+        <div *ngFor="let value of item.points">
+          <p
+            class="point-button"
+            (click)="selectedPoint = value.point"
+            style="cursor: pointer"
+          >
+            {{ value.point }}
+          </p>
+          <div class="row" *ngIf="selectedPoint == value.point">
+            <div class="col-sm-6">
+              <pre><i>{{ value.syntax }}</i></pre>
+            </div>
+            <div class="col-sm-6" style="text-align: left">
+              <p *ngFor="let desc of value.description">{{ desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</article>

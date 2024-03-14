@@ -1,0 +1,48 @@
+article {
+    width: 100%;
+    padding: 10px;
+    background-color:rgba(17, 87, 17, 0.8);
+    border-radius: 10px;
+    border: 1px solid beige;
+    text-align: center;
+}
+
+hr {
+    border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(206, 214, 206);
+}
+
+h2, h4 {
+    color:rgb(197, 243, 199)
+}
+
+.content {
+    text-align: left;
+}
+
+aside {
+    color: rgb(193, 235, 202);
+}
+
+li {
+    list-style-type: disc;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(26, 80, 39);
+    font-weight: bold;  
+    margin: 5px 5px;
+}
+
+.pop-up {
+    position:absolute; 
+    top:30px; 
+    left:10%; 
+    background-color: white;
+    z-index: 3;
+}

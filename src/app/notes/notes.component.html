@@ -1,0 +1,20 @@
+<div class="container-fluid home" #homeNotes>
+  <div class="row">
+    <div class="col-xs-12" style="position: relative">
+      <header>
+        <h1><strong>Angular</strong></h1>
+        <h6>JavaScript framework to create Single Page Applications</h6>
+        <button (click)="showLoading()">Click Me!</button>
+        <button [routerLink]="['details']">Open Details</button>
+        <button [routerLink]="'/home'">Go Home</button>
+      </header>
+      <hr />
+      <router-outlet></router-outlet>
+      <div *ngIf="loadingImage" class="pop-up">
+        <h3>How an Angular App Gets Loaded in Browser?</h3>
+        <img src="../../assets/images/loading_diagram.png" alt="" />
+        <button (click)="hideLoading()">Back</button>
+      </div>
+    </div>
+  </div>
+</div>

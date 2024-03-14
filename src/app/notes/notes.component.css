@@ -1,0 +1,44 @@
+.home {
+  height: max-content;
+  padding: 0;
+  background-image: url(../../assets/images/bg-notes.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  color: antiquewhite;
+  overflow: hidden;
+}
+
+.home header {
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(118, 155, 121);
+  border-radius: 5px;
+  border-color: black;
+}
+
+.pop-up {
+  position: absolute;
+  top: 30px;
+  left: 25%;
+  background-color: white;
+}
+
+.pop-up h3 {
+  text-align: center;
+  color: black;
+  padding: 3px;
+}
+
+section {
+  text-align: center;
+  height: 403px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(24, 64, 99);
+  border-radius: 10px;
+}

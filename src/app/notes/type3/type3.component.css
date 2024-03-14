@@ -1,0 +1,62 @@
+article {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(17, 87, 17, 0.8);
+  border-radius: 10px;
+  border: 1px solid beige;
+  text-align: center;
+}
+
+hr {
+  border-style: dashed;
+  border-width: 3px;
+  border-color: rgb(206, 214, 206);
+}
+
+h2,
+h4 {
+  color: rgb(197, 243, 199);
+}
+
+.content {
+  text-align: left;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+}
+
+aside {
+  color: rgb(193, 221, 235);
+}
+
+li {
+  list-style-type: disc;
+}
+
+.button-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.btn-subtype {
+  width: 150px;
+  height: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(19, 82, 40);
+  color: rgb(205, 236, 218);
+  font-weight: bold;
+}
+
+.btn-subtype-active {
+  background-color: rgb(43, 194, 143);
+}
+
+.point-button {
+  background: linear-gradient(to right, beige, green, beige);
+  width: 100%;
+  border-radius: 10px;
+}

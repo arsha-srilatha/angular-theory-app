@@ -1,0 +1,38 @@
+.assignment-page {
+  width: 100%;
+  height: max-content;
+  color: aliceblue;
+  text-align: center;
+  background-image: url(../../assets/images/bg-assignments.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Protest Riot", sans-serif;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  color: rgb(80, 68, 68);
+  background-color: rgb(73, 196, 245);
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid beige;
+}
+
+hr {
+  border: 5px double rgb(19, 54, 21);
+}
+
+.assignment-background {
+  background-color: rgb(93, 194, 118);
+  width: 100vw;
+  height: max-content;
+  color: aliceblue;
+  text-align: center;
+}

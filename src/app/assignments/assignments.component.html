@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="assignment-page">
+    <h1>Assignment List</h1>
+    <button [routerLink]="['assignment-list']">View Assignment List</button>
+    <button [routerLink]="['/home']">Go Home</button>
+    <hr />
+  </div>
+</div>
+<div class="row assignment-background">
+  <router-outlet></router-outlet>
+</div>
